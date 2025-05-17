@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
 import { PhotoListComponent } from './photo-list.component';
-import { PhotoService } from 'src/app/services/photo.service';
 import { of } from 'rxjs';
+import { PhotoService } from 'src/app/services/photo.service';
 
 describe('PhotoListComponent', () => {
   let component: PhotoListComponent;

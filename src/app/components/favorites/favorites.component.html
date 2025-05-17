@@ -1,9 +1,0 @@
-<div class="favorites-grid">
-    <div *ngFor="let photo of favorites" class="photo-item">
-      <img [src]="photo" alt="Favorite photo" [routerLink]="['/photos', encode(photo)]" />
-    </div>
-  </div>
-  
-  <div *ngIf="favorites.length === 0" class="empty-message">
-    <p>No favorites yet.</p>
-  </div>

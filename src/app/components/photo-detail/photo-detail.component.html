@@ -1,0 +1,11 @@
+<div class="photo-detail-container">
+    <img [src]="photoUrl" alt="Selected photo" />
+    
+    <button *ngIf="!isFavorite" (click)="addToFavorites()">
+      Add to Favorites
+    </button>
+  
+    <button *ngIf="isFavorite" (click)="removeFromFavorites()">
+      Remove from Favorites
+    </button>
+  </div>

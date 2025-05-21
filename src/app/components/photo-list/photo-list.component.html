@@ -1,0 +1,6 @@
+<div class="photo-grid">
+    <div class="photo-item" *ngFor="let photo of photos; let i = index">
+        <img [src]="photo" alt="Photo" [routerLink]="['/photos', encode(photo)]">    </div>
+  </div>
+  
+  <div class="loading" *ngIf="loading">Loading...</div>
